@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра Виселица</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="content">
+
+  <!-- Экран выбора темы -->
+  <div class="theme-selection">
+    <h1>Выберите тему</h1>
+    <div class="theme-buttons">
+      <button data-theme="animals">Животные</button>
+      <button data-theme="cities">Города</button>
+      <button data-theme="weather">Погода</button>
+      <button data-theme="racing">Гонки</button>
+      <button data-theme="webdev">Веб-программирование</button>
+      <button data-theme="sports">Спорт</button>
+      <button data-theme="math">Математика</button>
+    </div>
+  </div>
+
+  <!-- Основной экран игры -->
+  <div class="game-container hidden">
+
+    <div class="game-title">
+      <p>Попробуй угадать слово</p>
+      <h1>Виселица</h1>
+    </div>
+
+    <div class="game-input">
+      <p>Введите букву:</p>
+      <input type="text" maxlength="1" class="letter-input">
+      <button class="game-input__btn">Проверить</button>
+      <div class="game-input__validation"></div>
+    </div>
+
+    <div class="game-animation">
+      <div class="game-animation__container">
+        <div class="human">
+          <div class="human__rope"></div>
+          <div class="human__head"></div>
+          <div class="human__body">
+            <div class="human__body-left"></div>
+            <div class="human__body-right"></div>
+          </div>
+          <div class="human__leg">
+            <div class="human__leg-left"></div>
+            <div class="human__leg-right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-result">
+      <p>Слово:</p>
+      <div class="game-result__word"></div>
+    </div>
+
+    <div class="keyboard"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
